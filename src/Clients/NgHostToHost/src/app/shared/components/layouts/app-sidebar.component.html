@@ -1,0 +1,87 @@
+
+      
+      <!-- Page Sidebar Header-->
+<!-- <div class="sidebar-header-wrapper">
+        <input type="text" class="searchinput" />
+        <i class="mdi mdi-magnify mdi-24"></i>
+        <div class="searchhelper">Search Reports, Charts, Emails or Notifications</div>
+    </div> -->
+    <!-- /Page Sidebar Header -->
+    <!-- Sidebar Menu -->
+    <ul class="bnav sidebar-menu" (click)="sideBarMenuOnClick($event)"  style="position: relative; overflow: hidden; width: auto; height: 572px;z-index: 1">
+        <li>
+                <a href="javascript:void(0)" class="menu-dropdown">
+                    <i class="mdi mdi-hexagon-outline mdi-18px"></i>
+                    <span class="menu-text"> Firma </span>
+
+                    <i class="menu-expand"></i>
+                </a>
+
+                <ul class="submenu">
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.simpletables" routerLink="Firma/Pendiente">
+                            <span class="menu-text"> Pendiente </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.simpletables" routerLink="Firma/Todos">
+                            <span class="menu-text"> Todos </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        <li>
+                <a href="javascript:void(0)" class="menu-dropdown">
+                    <i class="mdi mdi-hexagon-outline mdi-18px"></i>
+                    <span class="menu-text"> Transferencia </span>
+
+                    <i class="menu-expand"></i>
+                </a>
+
+                <ul class="submenu">
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.simpletables" routerLink="Transaccion/Aceptada">
+                            <span class="menu-text"> Aceptada </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.simpletables" routerLink="Transaccion/Rechazada">
+                            <span class="menu-text"> Rechazada </span>
+                        </a>
+                    </li>
+                    <li ui-sref-active="active">
+                        <a ui-sref="app.simpletables" routerLink="Transaccion/Todos">
+                            <span class="menu-text"> Todos </span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    </ul>
+
+    <!-- <ul class="nav sidebar-menu" (click)="sideBarMenuOnClick($event)"  style="position: relative; overflow: hidden; width: auto; height: 572px;z-index: 1">
+            <li ui-sref-active="active" *ngFor="let opcion of urls">
+                    <a *ngIf="opcion.PadreId==null && opcion.Url!=''" [routerLink]="[opcion.Url]">
+                        <i class="mdi mdi-hexagon-outline mdi-18px"></i>
+                        <span class="menu-text"> {{opcion.Descripcion}} </span>
+                    </a>
+                </li>
+            <li *ngFor="let opcion of urls">
+                    <a href="javascript:void(0)" class="menu-dropdown" *ngIf="opcion.PadreId==null && opcion.Url==''">
+                        <i class="mdi mdi-hexagon-outline mdi-18px"></i>
+                        <span class="menu-text"> {{opcion.Descripcion}} </span>
+
+                        <i class="menu-expand"></i>
+                    </a>
+
+                    <ul class="submenu">
+                        <li ui-sref-active="active" *ngFor="let child of urls" >
+                            <a ui-sref="app.simpletables" [routerLink]="[child.Url]" *ngIf="opcion.OpcionId==child.PadreId && opcion.Url==''">
+                                <span class="menu-text">{{child.Descripcion}} </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+        </ul> -->
+        <!-- /Sidebar Menu -->
+        

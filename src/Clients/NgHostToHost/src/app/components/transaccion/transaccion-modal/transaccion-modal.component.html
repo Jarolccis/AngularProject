@@ -1,0 +1,287 @@
+<div class="modal-header">
+    <h4 class="modal-title pull-left">Transacción</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="transaccionModalHide()" >
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+  <div class="modal-body">
+    <div class="card">
+      <h5 class="card-header">Información General</h5>
+      <div class="card-body">              
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>Tipo</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.TipoOperacion" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+              <label>Operación:</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.Operacion" readonly>
+              </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>E. Pagadora</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaOrigen.Sociedad" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+              <label>B. Pagador</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+                <div class="input-group">
+                    <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaOrigen.Banco" readonly>
+                </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>C. de Debito</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaOrigen.Numero" readonly>
+              </div>                  
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>E. Beneficiaria</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaDestino.Sociedad" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>B. Beneficiario</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaDestino.Banco" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+              <label>C. de Abono</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.CuentaDestino.Numero" readonly>
+              </div>                  
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+              <label>N° Pago SAP</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.NumeroSAP" readonly>
+              </div>                  
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+              <label>Importe</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" value="{{transaccion.MonedaCodigo}}{{transaccion.Importe | number : '1.2-2'}}" readonly>
+              </div>                  
+            </div>            
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>Fecha Ingreso</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" value="{{transaccion.FechaIngreso | date: 'dd/MM/yyyy'}}" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>Usuario Ingreso</label>
+              </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.Usuario" readonly>
+              </div>                  
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>Fecha de Firma</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" value="{{transaccion.FirmaFecha | date: 'dd/MM/yyyy'}}" readonly>
+              </div>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-2">
+                <label>Firmado por</label>
+            </div>
+            <div class="col-12 col-sm-3 col-md-3 col-lg-4">
+              <div class="input-group">
+                <input class="form-control form-control-sm" type="text" [value]="transaccion.FirmaUsuario" readonly>
+              </div>                  
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h5 class="card-header">Información Adicional</h5>
+        <div class="card-body">
+          <div>
+            <tabset>
+                <tab heading="Detalle" id="tab1" *ngIf="transaccion.Detalle.length>0">
+                    <div class="col-xl-12">
+                        <table class="table table-responsive-lg table-sm">
+                            <thead class="thead-light">
+                                <tr>
+                                  <th>Número</th>
+                                    <th>Fecha</th>
+                                    <th>Fecha Vencimiento</th>
+                                    <th>Importe</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr  *ngFor="let item of transaccion.Detalle">
+                                    <td width="30%">
+                                        <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          {{item.NumeroFactura}}
+                                        </div>
+                                    </td>
+                                    <td width="20%">
+                                        <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          {{item.Fecha | date: 'dd/MM/yyyy'}}
+                                        </div>
+                                    </td>
+                                    <td width="25%">
+                                        <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                            {{item.FechaVencimiento | date: 'dd/MM/yyyy'}}
+                                        </div>
+                                    </td>
+                                    <td width="15%">
+                                        <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                            {{transaccion.MonedaCodigo}}{{item.Importe | number : '1.2-2'}}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </tab>
+              <tab heading="Historial" id="tab1">
+                  <div class="col-xl-12">
+                      <table class="table table-responsive-lg table-sm">
+                          <thead class="thead-light">
+                              <tr>
+                                  <th>Descripción</th>
+                                  <th>Fecha</th>
+                                  <th>Estado</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td width="70%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        Se aprueba todo ok
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          05/10/2018 08:30:00 am
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        Firma Aprobada
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td width="70%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        Se enviado la transacción
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          05/10/2018 08:30:05 am
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        Transacción enviada
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </tab>
+              <tab heading="Archivos">
+                  <div class="col-xl-12">
+                      <table class="table table-responsive-lg table-sm">
+                          <thead class="thead-light">
+                              <tr>
+                                  <th>Archivo</th>
+                                  <th>Descripción</th>
+                                  <th>Fecha</th>
+                                  <th>Descarga</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td width="70%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        P34524354354354.txt
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          Archivo recibido de SAP
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          01/10/2018 08:30:05 am
+                                      </div>
+                                  </td>
+                                  <td width="15%" align="center">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          <span class="mdi mdi-download mdi-18px"></span>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td width="70%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        BANCO1732949324789234.xml
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                        Archivo enviado al Banco
+                                      </div>
+                                  </td>
+                                  <td width="15%">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          05/10/2018 08:30:05 am
+                                      </div>
+                                  </td>
+                                  <td width="15%" align="center">
+                                      <div class="column-responsive" placement="bottom" ngbTooltip="...">
+                                          <span class="mdi mdi-download mdi-18px"></span>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </tab>
+            </tabset>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-sm btn-primary" (click)="transaccionModalHide()">Close</button>
+  </div>

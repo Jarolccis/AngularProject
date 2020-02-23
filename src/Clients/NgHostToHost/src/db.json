@@ -1,0 +1,404 @@
+{
+  "transacciones": [
+    {
+      "TransaccionId":"1CE2F0F4-A6B0-4A02-BFCE-1549854C7325",
+      "TipoOperacionId": "A010C1CB-26EF-4351-BF86-E2696D59E742",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+      "CuentaDestinoId": "F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":"7B9EDDCA-5EE1-4DB9-AFFA-2F7E8FA39C56",
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2014-01-01T23:28:56.782Z",
+      "NumeroSAP":"20000124",
+      "Importe":400000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":"Enviada",
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":"2018-10-04T23:28:56.782Z",
+      "FirmaEstadoId":"C0870CC7-012F-4E7A-A757-0096214FC776",
+      "FirmaEstado":"Aprobado",
+      "FirmaUsuario":"Cesar Falla",
+      "Usuario":"Mirko U.",
+      
+      "CuentaOrigen":{
+        "CuentaId":"3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2227",
+        "Banco":"BBVA",
+        "Sociedad":"Jarol S.A"
+      },
+      "CuentaDestino":{
+        "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"6543",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[]
+    },
+    {
+      "TransaccionId":"1CE2F0F4-A6B0-4A02-BFCE-1549854C7325",
+      "TipoOperacionId": "A010C1CB-26EF-4351-BF86-E2696D59E742",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+      "CuentaDestinoId": "F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":"847F0F90-528E-4F6E-8763-351844E13D93",
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2018-10-01T23:28:56.782Z",
+      "NumeroSAP":"20000124",
+      "Importe":400000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":"Aceptada",
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":"2014-01-01T23:28:56.782Z",
+      "FirmaEstadoId":"C0870CC7-012F-4E7A-A757-0096214FC776",
+      "FirmaEstado":"Aprobado",
+      "FirmaUsuario":"Cesar Falla",
+      "Usuario":"Mirko U.",
+      
+      "CuentaOrigen":{
+        "CuentaId":"3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2227",
+        "Banco":"BBVA",
+        "Sociedad":"Jarol S.A"
+      },
+      "CuentaDestino":{
+        "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"6543",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[]
+    },
+    {
+      "TransaccionId":"1CE2F0F4-A6B0-4A02-BFCE-1549854C7325",
+      "TipoOperacionId": "A010C1CB-26EF-4351-BF86-E2696D59E742",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+      "CuentaDestinoId": "F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":"218E0819-E3B1-47D5-8AC4-0CA203DDB837",
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2018-01-01T23:28:56.782Z",
+      "NumeroSAP":"20000124",
+      "Importe":400000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":"Rechazada",
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":"2014-01-01T23:28:56.782Z",
+      "FirmaEstadoId":"C0870CC7-012F-4E7A-A757-0096214FC776",
+      "FirmaEstado":"Aprobado",
+      "FirmaUsuario":"Cesar Falla",
+      "Usuario":"Mirko U.",
+      
+      "CuentaOrigen":{
+        "CuentaId":"3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2227",
+        "Banco":"BBVA",
+        "Sociedad":"Jarol S.A"
+      },
+      "CuentaDestino":{
+        "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"6543",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[]
+    }
+  ],
+  "firmas": [
+    {
+      "TransaccionId":"94275252-652F-4E4E-B0E3-D383FEBB6BB3",
+      "TipoOperacionId": "0DDA7F4B-2453-471C-A787-0C4CA4AABCBA",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "2068ED04-9285-4058-AFFB-EFAB6D8BEDDD",
+      "CuentaDestinoId": "61C82FDD-EE97-438A-B5F5-887B1406D0D8",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":null,
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2018-10-05T23:28:56.782Z",
+      "NumeroSAP":"20000123",
+      "Importe":2000000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":null,
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":null,
+      "FirmaEstadoId":"16275B8F-339B-4D87-B88A-95DC601F7AFD",
+      "FirmaEstado":"Pendiente",
+      "FirmaUsuarioId":null,
+      "Usuario":"Mirko U.",
+      "CuentaOrigen":{
+        "CuentaId":"2068ED04-9285-4058-AFFB-EFAB6D8BEDDD",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2223",
+        "Banco":"BBVA",
+        "Sociedad":"Jarol S.A"
+      },
+      "CuentaDestino":{
+        "CuentaId":"61C82FDD-EE97-438A-B5F5-887B1406D0D8",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"5432",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[{
+        "Fecha":"2018-10-03T23:28:56.782Z",
+        "FechaVencimiento":"2018-10-20T23:28:56.782Z",
+        "NumeroFactura":"F001-0023212",
+        "Importe":1342
+      },{
+        "Fecha":"2018-10-03T23:28:56.782Z",
+        "FechaVencimiento":"2018-10-20T23:28:56.782Z",
+        "NumeroFactura":"F001-0023215",
+        "Importe":1845
+      }]
+    },
+    {
+      "TransaccionId":"1CE2F0F4-A6B0-4A02-BFCE-1549854C7325",
+      "TipoOperacionId": "A010C1CB-26EF-4351-BF86-E2696D59E742",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+      "CuentaDestinoId": "F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":null,
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2018-10-04T23:28:56.782Z",
+      "NumeroSAP":"20000124",
+      "Importe":400000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":null,
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":"2018-02-01T23:28:56.782Z",
+      "FirmaEstadoId":"C0870CC7-012F-4E7A-A757-0096214FC776",
+      "FirmaEstado":"Aprobado",
+      "FirmaUsuarioId":"",
+      "FirmaUsuario":"Cesar Falla",
+      "Usuario":"Mirko U.",
+      
+      "CuentaOrigen":{
+        "CuentaId":"3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2227",
+        "Banco":"BBVA",
+        "Sociedad":"Jarol S.A"
+      },
+      "CuentaDestino":{
+        "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"6543",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[]
+    },
+    {
+      "TransaccionId":"1CE2F0F4-A6B0-4A02-BFCE-1549854C7325",
+      "TipoOperacionId": "A010C1CB-26EF-4351-BF86-E2696D59E742",
+      "OperacionId": "3AF059EC-2F1C-435D-8135-1C6948C76D15",
+      "CuentaOrigenId": "FCF51A43-C271-42F2-862B-9CD2AE0248B3",
+      "CuentaDestinoId": "F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+      "MonedaId":"311356E1-BD00-4268-8437-6041A5207733",
+      "EstadoId":null,
+      "UsuarioId":"E258E853-6497-4615-82DC-1AC6E2C75D2F",
+      "FechaIngreso":"2018-10-03T23:28:56.782Z",
+      "NumeroSAP":"20000500",
+      "Importe":340000,
+      "TipoOperacion":"Interbancario",
+      "Operacion":"Transferencia",
+      "Estado":null,
+      "Moneda":"PEN",
+      "MonedaCodigo":"S/",
+      "FirmaFecha":null,
+      "FirmaEstadoId":"4DBFBB91-833A-4E0E-9152-8CF3E3B459C0",
+      "FirmaEstado":"Rechazado",
+      "Usuario":"Mirko U.",
+      
+      "CuentaOrigen":{
+        "CuentaId":"FCF51A43-C271-42F2-862B-9CD2AE0248B3",
+        "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"2227",
+        "Banco":"Scotiabank",
+        "Sociedad":"RACIEMSA"
+      },
+      "CuentaDestino":{
+        "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+        "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+        "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+        "Numero":"6543",
+        "Banco":"BCP",
+        "Sociedad":"Jarol S.A"
+      },
+      "Detalle":[]
+    }
+  ],
+  "cuentas":[{
+    "CuentaId":"2068ED04-9285-4058-AFFB-EFAB6D8BEDDD",
+    "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Numero":"2223",
+    "Banco":"BBVA",
+    "Sociedad":"Jarol S.A"
+  },{
+    "CuentaId":"3D13E26D-CD88-4754-B0DB-A8B6B7D4AB31",
+    "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Numero":"2227",
+    "Banco":"BCP",
+    "Sociedad":"Jarol S.A"
+  },{
+    "CuentaId":"61C82FDD-EE97-438A-B5F5-887B1406D0D8",
+    "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Numero":"5432",
+    "Banco":"BCP",
+    "Sociedad":"Jarol S.A"
+  },{
+    "CuentaId":"F2F47FDA-8883-4C82-AA60-4D2B980BAAA7",
+    "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Numero":"6543",
+    "Banco":"BCP",
+    "Sociedad":"Jarol S.A"
+  },{
+    "CuentaId":"AA0BFFA1-6380-4D66-94EC-B06F6EBB0194",
+    "BancoId":"F89D4E94-2059-4513-B7BD-5D9961A6B1EE",
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Numero":"2226",
+    "Banco":"Scotiabank",
+    "Sociedad":"Jarol S.A"
+  },{
+    "CuentaId":"FCF51A43-C271-42F2-862B-9CD2AE0248B3",
+    "BancoId":"F89D4E94-2059-4513-B7BD-5D9961A6B1EE",
+    "SociedadId":"6FEF4E39-7A07-4897-91F0-EC3B52EB477A",
+    "Numero":"6543",
+    "Banco":"Scotiabank",
+    "Sociedad":"Raciemsa"
+  }],
+
+  "bancos":[{
+    "BancoId":"ADABBBFE-E6C9-4B10-9444-6683447C50A3",
+    "Banco":"BBVA"
+  },{
+    "BancoId":"F89D4E94-2059-4513-B7BD-5D9961A6B1EE",
+    "Banco":"Scotiabank"
+  },{
+    "BancoId":"5D287FAC-DA51-4B6B-B1E1-4CC145AD719F",
+    "Banco":"Citibank"
+  },{
+    "BancoId":"2FEC3F0A-E756-45D2-966F-80FEAF737A29",
+    "Banco":"BCP"
+  }],
+
+  "sociedades":[{
+    "SociedadId":"D409FDCD-1264-4F1B-89AF-7EE62B49BFE1",
+    "Sociedad":"Jarol S.A"
+  },{
+    "SociedadId":"6FEF4E39-7A07-4897-91F0-EC3B52EB477A",
+    "Sociedad":"Raciemsa"
+  },{
+    "SociedadId":"9ED43511-6D50-4B76-9867-53955C91EC8D",
+    "Sociedad":"Coazucar Perú"
+  },{
+    "SociedadId":"E1BF3B1F-89F4-4D0F-9EF1-714E20ABC550",
+    "Sociedad":"Casa Grande S.A.A"
+  }],
+
+  "maestros":[{
+    "MaestroId":"0DDA7F4B-2453-471C-A787-0C4CA4AABCBA",
+    "Tabla":"TipoOperacion",
+    "Value":"Interbancario",
+    "Orden":1
+  },{
+    "MaestroId":"A010C1CB-26EF-4351-BF86-E2696D59E742",
+    "Tabla":"TipoOperacion",
+    "Value":"Transferencia mismo Banco",
+    "Orden":2
+  },{
+    "MaestroId":"3AF059EC-2F1C-435D-8135-1C6948C76D15",
+    "Tabla":"Operacion",
+    "Value":"Transferencia",
+    "Orden":1
+  },{
+    "MaestroId":"A432C868-8F94-4314-8BB8-99CA411C263C",
+    "Tabla":"Operacion",
+    "Value":"Pago de Facturas",
+    "Orden":2
+  },{
+    "MaestroId":"34286239-E799-4A18-BA03-343EE46D3008",
+    "Tabla":"Operacion",
+    "Value":"Préstamo",
+    "Orden":3
+  },{
+    "MaestroId":"311356E1-BD00-4268-8437-6041A5207733",
+    "Tabla":"Moneda",
+    "Value":"PEN",
+    "Orden":1
+  },{
+    "MaestroId":"05214029-3E80-438F-92DD-FF0831BE111E",
+    "Tabla":"Moneda",
+    "Value":"USD",
+    "Orden":2
+  },{
+    "MaestroId":"420E43EC-D622-428D-B260-C592102352EE",
+    "Tabla":"Moneda",
+    "Value":"EUR",
+    "Orden":3
+  },{
+    "MaestroId":"7B9EDDCA-5EE1-4DB9-AFFA-2F7E8FA39C56",
+    "Tabla":"EstadoTransaccion",
+    "Value":"Enviada",
+    "Orden":1
+  },{
+    "MaestroId":"847F0F90-528E-4F6E-8763-351844E13D93",
+    "Tabla":"EstadoTransaccion",
+    "Value":"Aceptada",
+    "Orden":2
+  },{
+    "MaestroId":"218E0819-E3B1-47D5-8AC4-0CA203DDB837",
+    "Tabla":"EstadoTransaccion",
+    "Value":"Rechazada",
+    "Orden":3
+  },{
+    "MaestroId":"16275B8F-339B-4D87-B88A-95DC601F7AFD",
+    "Tabla":"EstadoFirma",
+    "Value":"Pendiente",
+    "Orden":1
+  },{
+    "MaestroId":"C0870CC7-012F-4E7A-A757-0096214FC776",
+    "Tabla":"EstadoFirma",
+    "Value":"Aprobado",
+    "Orden":2
+  },{
+    "MaestroId":"4DBFBB91-833A-4E0E-9152-8CF3E3B459C0",
+    "Tabla":"EstadoFirma",
+    "Value":"Rechazado",
+    "Orden":3
+  }]
+}

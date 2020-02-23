@@ -1,0 +1,31 @@
+<div ui-view autoscroll="false">
+
+<div class="loading-container">
+        <app-loading></app-loading>
+</div>
+<div class="navbar {{settings.fixed.navbar ? 'navbar-fixed-top' : ''}}" style="background-color: #007bff">
+        <app-navbar (logout)="exitApp()"></app-navbar>
+</div>
+<div class="main-container container-fluid">
+    <div class="page-container" style="left:-15px">
+        <div class="page-sidebar {{settings.fixed.sidebar ? 'sidebar-fixed' : ''}}" id="sidebar">
+               <app-sidebar [urls]="opciones" [urlChilds]="opciones"></app-sidebar>
+        </div>
+        <div id="chatbar" class="page-chatbar">
+                <app-chatbar></app-chatbar>
+        </div>
+        <div class="page-content">
+                <div class="page-breadcrumbs {{settings.fixed.breadcrumbs ? 'breadcrumbs-fixed' : ''}}">
+                        <app-breadcrumbs></app-breadcrumbs>
+                </div>
+             <div class="page-header position-relative {{settings.fixed.header ? 'page-header-fixed' : ''}}">
+                    <app-header></app-header>
+            </div>
+            <div class="page-body" ui-view>
+            <router-outlet>
+            </router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

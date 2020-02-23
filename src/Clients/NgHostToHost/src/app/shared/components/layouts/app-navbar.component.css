@@ -1,0 +1,989 @@
+
+
+/*#region navbar*/
+.navbar {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 45px;
+    min-height: 45px;
+    z-index: 200;
+  }
+  .navbar .navbar-inner {
+    border: 0;
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 45px;
+    position: relative;
+    background: #007bff;
+  }
+  .navbar .navbar-inner .navbar-container {
+    padding-left: 10px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account {
+    height: 45px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account > div {
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    zoom: 1;
+    filter: alpha(opacity=100);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    list-style: none;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li {
+    float: left;
+    position: relative;
+    height: 45px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a {
+    position: relative;
+    min-width: 50px;
+    height: 45px;
+    display: inline-block;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a:hover {
+    text-decoration: none;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a .icon {
+    display: block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 48px;
+    text-align: center;
+    -webkit-transition: line-height 0.3s ease;
+    -moz-transition: line-height 0.3s ease;
+    -o-transition: line-height 0.3s ease;
+    transition: line-height 0.3s ease;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a .badge {
+    position: absolute;
+    top: 6px;
+    left: 4px;
+    padding: 2px;
+    cursor: pointer;
+    background-color: transparent !important;
+    border: 1px solid #ffffff;
+    width: 18px;
+    height: 18px;
+    box-shadow: 1px 1px 0 #007bff;
+    -webkit-transition: top 0.3s ease;
+    -moz-transition: top 0.3s ease;
+    -o-transition: top 0.3s ease;
+    transition: top 0.3s ease;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.wave {
+    overflow: visible;
+    cursor: pointer;
+    z-index: 10;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -moz-transition: -moz-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -o-transition: -o-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),-moz-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),-o-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55),transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.wave.in {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.wave.in:after {
+    content: "";
+    top: 3px;
+    left: 5px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: 8121991;
+    background-image: -webkit-radial-gradient(center center, farthest-side circle, rgba(26, 175, 93, 0) 70%, #f5f5f5 100%);
+    background-image: -moz-radial-gradient(center center, farthest-side circle, rgba(26, 175, 93, 0) 70%, #f5f5f5 100%);
+    background-image: -o-radial-gradient(center center, farthest-side circle, rgba(26, 175, 93, 0) 70%, #f5f5f5 100%);
+    background-image: radial-gradient(center center, farthest-side circle, rgba(26, 175, 93, 0) 70%, #f5f5f5 100%);
+    border: 1px solid #ffffff;
+    -webkit-animation: wave 5s 3s infinite linear;
+    -moz-animation: wave 5s 3s infinite linear;
+    -o-animation: wave 5s 3s infinite linear;
+    animation: wave 5s 3s infinite linear;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse {
+    width: 45px;
+    height: 45px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse:after,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    border: 1px solid #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse:after,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse:before {
+    -webkit-transform: scale(0.91);
+    -moz-transform: scale(0.91);
+    -o-transform: scale(0.91);
+    -ms-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation: borderPulse 3.5s infinite ease;
+    -moz-animation: borderPulse 3.5s infinite ease;
+    -o-animation: borderPulse 3.5s infinite ease;
+    animation: borderPulse 3.5s infinite ease;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse .badge {
+    border: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse:before {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse i,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.borderpulse .badge {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.blink i,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.blink .badge {
+    -webkit-transform: scale(0.91);
+    -moz-transform: scale(0.91);
+    -o-transform: scale(0.91);
+    -ms-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation: borderPulse 3.5s infinite ease;
+    -moz-animation: borderPulse 3.5s infinite ease;
+    -o-animation: borderPulse 3.5s infinite ease;
+    animation: borderPulse 3.5s infinite ease;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a.blink i {
+    -webkit-animation-delay: 0.05s;
+    -moz-animation-delay: 0.05s;
+    -o-animation-delay: 0.05s;
+    animation-delay: 0.05s;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu {
+    padding: 0;
+    min-width: 240px;
+    -webkit-animation-name: dropdownSlideInDown;
+    -moz-animation-name: dropdownSlideInDown;
+    -o-animation-name: dropdownSlideInDown;
+    animation-name: dropdownSlideInDown;
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-border-radius: 0 !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 0 !important;
+    -moz-background-clip: padding !important;
+    border-radius: 0 !important;
+    background-clip: padding-box !important;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li {
+    background-color: #ffffff;
+    border: 0;
+    padding: 0 8px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li:hover {
+    background-color: #f5f5f5;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li a {
+    margin: 0;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px 2px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li a .progress {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li a:hover {
+    background-color: #f5f5f5;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-header,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-footer {
+    -webkit-text-shadow: none;
+    text-shadow: none;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: none;
+    color: #262626;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-header {
+    padding: 0 10px;
+    line-height: 34px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cecece;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-header a {
+    line-height: 34px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-header[class*="bordered-"] {
+    border-bottom-width: 3px;
+    border-style: solid;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-header i {
+    margin-right: 5px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-footer {
+    padding: 8px 5px 8px 10px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-footer[class*="bordered-"] {
+    border-top-width: 3px;
+    border-style: solid;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-footer a {
+    display: inline-block;
+    color: #999999;
+    padding: 0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu li.dropdown-footer .btn {
+    margin-top: -3px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications {
+    min-width: 300px;
+    padding-top: 10px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li {
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-icon {
+    float: left;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-icon i {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    margin-right: 10px;
+    font-size: 15px;
+    border-radius: 50%;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-body {
+    float: left;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-body .title {
+    display: block;
+    font-size: 13px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-body .description {
+    display: block;
+    font-size: 10px;
+    color: #999999;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-extra {
+    float: right;
+    text-align: right;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-extra i {
+    font-size: 14px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li .notification-extra .description {
+    display: block;
+    font-size: 10px;
+    color: #999999;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li.dropdown-footer {
+    background-color: #11a9cc;
+    border-bottom: 0;
+    color: #ffffff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li.dropdown-footer a {
+    color: #ffffff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications li.dropdown-footer .weather-icon {
+    margin-top: -7px;
+    margin-left: 5px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages {
+    width: 300px;
+    padding-top: 10px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li {
+    border-bottom: 1px solid #f3f3f3;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message-avatar {
+    max-width: 42px;
+    margin-right: 6px;
+    margin-top: 5px;
+    vertical-align: top;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message {
+    display: inline-block;
+    position: relative;
+    width: 225px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message span {
+    display: block;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message-sender {
+    font-size: 13px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message-time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 11px;
+    font-weight: 400;
+    color: #007bff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message-subject {
+    margin-top: 5px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages li .message-body {
+    color: #999999;
+    max-height: 35px;
+    width: 100%;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li {
+    border-bottom: 1px solid #f5f5f5;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li:hover,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li a:hover {
+    background-color: #ffffff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.username {
+    display: none;
+    text-align: center;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.username,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.username a {
+    color: #d0d0d0;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.email {
+    text-align: center;
+    font-size: 12px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.email,
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.email a {
+    color: #d0d0d0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li .avatar-area {
+    position: relative;
+    text-align: center;
+    margin: 10px auto;
+    width: 128px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li .avatar-area .avatar {
+    width: 128px;
+    height: 128px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li .avatar-area .caption {
+    background-color: #007bff;
+    zoom: 1;
+    filter: alpha(opacity=70);
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 10px;
+    line-height: 9px;
+    position: absolute;
+    padding: 7px 0;
+    text-align: center;
+    width: 128px;
+    cursor: pointer;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.edit {
+    min-height: 35px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.edit a {
+    color: #999999;
+    display: inline-block;
+    clear: none;
+    font-size: 13px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.edit a:hover {
+    color: #11a9cc;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area {
+    display: table;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .colorpicker {
+    padding: 10px 4px;
+    width: 100%;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .colorpicker > li {
+    display: block;
+    float: left;
+    width: 23px;
+    height: 23px;
+    margin: 2px;
+    padding: 0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .colorpicker > li > .colorpick-btn {
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0;
+    -moz-background-clip: padding;
+    border-radius: 0;
+    background-clip: padding-box;
+    position: relative;
+    -webkit-transition: all ease 0.1s;
+    -moz-transition: all ease 0.1s;
+    -o-transition: all ease 0.1s;
+    transition: all ease 0.1s;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .colorpicker > li > .colorpick-btn:hover {
+    text-decoration: none;
+    zoom: 1;
+    filter: alpha(opacity=80);
+    -webkit-opacity: 0.8;
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .colorpicker > li > .colorpick-btn.selected:after {
+    content: "\f00c";
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 11px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 20px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.theme-area .btn-colorpicker {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #DDD;
+    vertical-align: middle;
+    border-radius: 0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.dropdown-footer {
+    padding: 10px;
+    border-top: 3px solid #007bff;
+    border-bottom: 0;
+    text-align: right;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.dropdown-footer a {
+    color: #717171;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-arrow:before {
+    content: '';
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    width: 50px;
+    background-color: #ffffff;
+    border: 0;
+    top: -46px;
+    height: 3px;
+    -webkit-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li.open > a {
+    background-color: #007bff;
+    -webkit-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area > li.open .dropdown-menu {
+    margin-top: 0;
+    right: 0;
+    border: 0 !important;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area {
+    padding: 8px 20px 10px 20px;
+    height: 45px;
+    opacity: 1;
+    position: relative;
+    cursor: pointer;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area .avatar {
+    margin-right: 14px;
+    display: block;
+    float: left;
+    border-left: 2px solid #fb6e52;
+    width: 29px;
+    height: 29px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area .avatar img {
+    width: 29px;
+    height: 29px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area section {
+    width: auto;
+    display: block;
+    overflow: hidden;
+    line-height: 25px;
+    float: left;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area section h2 {
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    margin: 0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area section h2 span {
+    display: block;
+    color: #fff;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    line-height: 25px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area + .dropdown-menu {
+    width: 100%;
+    min-width: 100px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area + .dropdown-arrow:before {
+    width: 100%;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting {
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting a {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting a:hover {
+    text-decoration: none;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting a .icon {
+    display: block;
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container {
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    display: inline-block;
+    width: 505px;
+    height: 45px;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    text-align: center;
+    padding: 11px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container input[type=checkbox] {
+    display: inline-block;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container input[type=checkbox] + .text {
+    color: #ffffff;
+    margin-right: 8px;
+    font-weight: 300;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container input[type=checkbox] + .text:before {
+    border-color: #007bff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container input[type=checkbox]:checked + .text {
+    color: #ffffff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container input[type=checkbox]:checked + .text:before {
+    border-color: #007bff;
+    color: #fb6e52;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account .account-area,
+  .navbar .navbar-inner .navbar-header .navbar-account .setting-container,
+  .navbar .navbar-inner .navbar-header .navbar-account .setting {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -o-transition: 0.9s;
+    transition: 0.9s;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting {
+    right: 505px;
+    background-color: #007bff;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting a {
+    -webkit-box-shadow: 0 -6px 40px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 -6px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 -6px 40px rgba(0, 0, 0, 0.4);
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting a:before {
+    content: '';
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    width: 50px;
+    background-color: #ffffff;
+    border: 0;
+    top: 0;
+    height: 3px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account.setting-open .account-area {
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -o-transform-origin: top right;
+    -ms-transform-origin: top right;
+    transform-origin: top right;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    right: 450px;
+  }
+  .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    zoom: 1;
+    filter: alpha(opacity=100);
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    padding: 11px;
+  }
+  .navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+    -webkit-text-shadow: none;
+    text-shadow: none;
+    padding: 2px 0 2px 0;
+    font-weight: 200;
+    height: 45px;
+  }
+  .navbar .navbar-brand small img {
+    height: 40px;
+    width: 177px;
+  }
+  .navbar .sidebar-collapse {
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    left: 189px;
+    top: 0px;
+    z-index: 2;
+    width: 35px;
+    height: 45px;
+  }
+  .navbar .sidebar-collapse:hover {
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  .navbar .sidebar-collapse .collapse-icon {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 11px 5px;
+    line-height: 22px;
+    position: relative;
+    -webkit-transition: background-color 0.218s ease;
+    -moz-transition: background-color 0.218s ease;
+    -o-transition: background-color 0.218s ease;
+    transition: background-color 0.218s ease;
+    -webkit-transition: -webkit-box-shadow 0.218s ease;
+    -moz-transition: -moz-box-shadow 0.218s ease;
+    -o-transition: box-shadow 0.218s ease;
+    transition: box-shadow 0.218s ease;
+    -webkit-transition: color 0.318s ease;
+    -moz-transition: color 0.318s ease;
+    -o-transition: color 0.318s ease;
+    transition: color 0.318s ease;
+  }
+  .navbar .sidebar-collapse.active:hover {
+    box-shadow: none;
+  }
+  .navbar .sidebar-collapse.active .collapse-icon {
+    font-size: 14px;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 11px;
+  }
+  .navbar.navbar-fixed-top {
+    z-index: 1003;
+  }
+  .navbar.navbar-fixed-top + .main-container {
+    margin-top: 45px;
+  }
+  @media only screen and (max-width: 767px) {
+    .navbar-container {
+      padding-left: 2px;
+    }
+  }
+  @media only screen and (max-width: 760px) {
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting {
+      top: 45px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container {
+      top: 45px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-login-area > li.username {
+      display: block;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area {
+      padding: 8px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area section {
+      display: none;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area .avatar {
+      margin-right: 0;
+      margin-left: 1px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area + .dropdown-menu {
+      min-width: 200px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area .login-area + .dropdown-menu:before {
+      width: 50px;
+    }
+  }
+  @media only screen and (max-width: 759px) {
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container {
+      width: 270px;
+      top: 0;
+      padding: 0 5px;
+      text-align: left;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container label {
+      margin-bottom: 0;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting {
+      right: 270px;
+      top: 0;
+    }
+  }
+  @media only screen and (max-width: 530px) {
+    .navbar {
+      height: 90px;
+    }
+    .navbar .sidebar-collapse {
+      left: auto;
+      right: 0;
+      width: 50px;
+    }
+    .navbar .sidebar-collapse .collpse-icon {
+      padding: 11px 15px;
+    }
+    .navbar .navbar-brand {
+      padding-left: 10px;
+    }
+    .navbar .navbar-inner .navbar-header {
+      float: none !important;
+      display: block;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account {
+      float: right;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area {
+      padding-left: 0;
+      top: 45px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications {
+      left: -135px;
+      right: auto;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications.dropdown-arrow:before {
+      left: 135px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages {
+      left: -135px;
+      right: auto;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages.dropdown-arrow:before {
+      left: 135px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .setting {
+      top: 45px !important;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .setting-container {
+      top: 45px !important;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container {
+      left: 50px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting {
+      left: 0;
+    }
+    .navbar .navbar-inner .navbar-container {
+      padding-left: 0;
+    }
+    .navbar-fixed-top + .main-container {
+      margin-top: 90px !important;
+    }
+    .breadcrumbs-fixed {
+      top: 90px !important;
+    }
+    .breadcrumbs-fixed + .page-header {
+      margin-top: 40px !important;
+    }
+    .page-header-fixed {
+      top: 130px !important;
+    }
+    .page-header-fixed + .page-body {
+      margin-top: 80px !important;
+      padding-top: 60px;
+    }
+    .page-sidebar.sidebar-fixed {
+      top: 90px !important;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container {
+      width: 270px;
+      padding: 0 5px;
+      text-align: left;
+      left: 50px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting-container label {
+      margin-bottom: 0;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account.setting-open .setting {
+      left: 0;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications {
+      left: -55px;
+      right: auto;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-notifications.dropdown-arrow:before {
+      left: 55px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages {
+      left: -105px;
+      right: auto;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-messages.dropdown-arrow:before {
+      left: 105px;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-tasks {
+      left: -100px;
+      right: auto;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-menu.dropdown-tasks.dropdown-arrow:before {
+      left: 100px;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li .dropdown-arrow:before {
+      width: 45px !important;
+    }
+    .navbar .navbar-inner .navbar-header .navbar-account .account-area > li > a {
+      min-width: 45px;
+    }
+  }
+  /*#endregion navbar*/
+  
+  

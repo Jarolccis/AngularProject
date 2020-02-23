@@ -1,0 +1,62 @@
+<div id="bg">
+    <img src="" alt="">
+  </div>
+<div style='position: absolute;top: 0;left: 0;height:100%;width:100%;cursor: not-allowed;filter: alpha(opacity=60);background: #007bff;z-index: 201;' *ngIf="isLoading">
+        <div style='padding:10% 50%' class='text-center'><div class="loader"></div></div>
+    </div>
+<div class="login-container animated fadeInDown">
+        <form [formGroup]="loginForm" (ngSubmit)="login(loginForm)">
+    
+         <div class="loginbox bg-white">
+                <img style="z-index: 1" src="../../../assets/images/Jarol.png" alt="divyia avatar" />
+
+        <div class="loginbox-social" style="padding-top:60px">
+            <img  width="200" />
+        </div>
+        <div class="loginbox-title">
+                <h5 style="font-family: fantasy;text-align: center;color:#003366">Sistema de Pagos a Proveedores</h5>
+        </div>
+
+        <div class="loginbox-or">
+            <div class="or-line">
+            </div>
+        </div>
+        <div class="loginbox-textbox">        
+        <div class="form-group">
+            <input id="usuario" type="text" class="form-control" formControlName="usuario"
+             placeholder="Usuario"/>
+            <div *ngIf="usuario.invalid && (usuario.dirty || usuario.touched)" class="alert alert-danger">
+                <div *ngIf="usuario.errors.required || usuario.errors.minlength">
+                    El nombre es requerido.
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="loginbox-textbox">
+            <div class="form-group">
+                <input id="password" type="password" class="form-control" placeholder="Contraseña" formControlName="password"/>
+                <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger">
+                    <div *ngIf="password.errors.required || password.errors.minlength">
+                        El Contraseña es requerido.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div  *ngIf="isError" isError class="alert alert-danger">
+            <div style="text-align: center;">
+                El Usuario/Contraseña es Incorrecta.
+            </div>
+        </div>
+        <div class="loginbox-forgot">
+        </div>
+        <div class="loginbox-submit">
+            <input type="submit" class="btn btn-primary btn-block" value="Ingresar" style="background-color: #003366;border-color: #003366;">
+        </div>
+        <div class="loginbox-signup">
+            <a href="register.html"></a>
+        </div>
+
+    </div><!--bd3119 003366-->
+</form>
+</div> 

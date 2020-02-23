@@ -1,0 +1,358 @@
+.page-chatbar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 287px;
+    display: none;
+    right: 0;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    -lh-property: 0;
+  height:-webkit-calc(100vh - 45px);
+  height:-moz-calc(100vh - 45px);
+  height:calc(100vh - 45px);
+  ;
+  }
+  .page-chatbar.open {
+    display: block;
+  }
+  .page-chatbar.open:before {
+    display: block;
+  }
+  .page-chatbar.open ~ .page-content {
+    margin-right: 287px !important;
+  }
+  .page-chatbar.open ~ .page-content .breadcrumbs-fixed {
+    right: 287px !important;
+  }
+  .page-chatbar.open ~ .page-content .page-header-fixed {
+    right: 287px !important;
+  }
+  .page-chatbar:before {
+    content: "";
+    position: fixed;
+    display: none;
+    width: 287px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+  .page-chatbar .chatbar-contacts {
+    height: 100%;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search {
+    position: relative;
+    height: 41px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput {
+    height: 41px;
+    z-index: 2;
+    background-color: #ffffff;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 40px;
+    width: 100%;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-color: #ffffff;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput:focus ~ .searchhelper {
+    display: block;
+    z-index: 124;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput::-webkit-input-placeholder {
+    color: #d0d0d0;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI' /*rtl:"Droid Arabic Kufi", "WYekan"*/;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d0d0d0;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI' /*rtl:"Droid Arabic Kufi", "WYekan"*/;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput:-moz-placeholder {
+    /* Firefox 19+ */
+    color: #d0d0d0;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI' /*rtl:"Droid Arabic Kufi", "WYekan"*/;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchinput:-ms-input-placeholder {
+    color: #d0d0d0;
+    font-weight: 300;
+    font-family: 'Open Sans', 'Segoe UI' /*rtl:"Droid Arabic Kufi", "WYekan"*/;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchicon {
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    left: 20px;
+    position: absolute;
+    top: 14px;
+    width: 12px;
+    color: #2dc3e8;
+    z-index: 124;
+  }
+  .page-chatbar .chatbar-contacts .contacts-search .searchhelper {
+    -webkit-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    color: #999;
+    display: none;
+    opacity: 1;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 40px;
+    z-index: 4;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact {
+    height: 85px;
+    padding: 10px;
+    position: relative;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-avatar {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-avatar img {
+    width: 65px;
+    height: 65px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 5px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-name {
+    font-size: 1em;
+    padding-bottom: 2px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status {
+    font-size: .8em;
+    margin-bottom: 2px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status .online,
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status .offline {
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status .online {
+    background-color: #a0d468;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status .offline {
+    background-color: #d73d32;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .contact-info .contact-status .status {
+    display: inline-block;
+    margin-left: 4px;
+  }
+  .page-chatbar .chatbar-contacts .contacts-list .contact .last-chat-time {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    font-size: .8em;
+  }
+  .page-chatbar .chatbar-messages {
+    height: 100%;
+  }
+  .page-chatbar .chatbar-messages .messages-contact {
+    height: 85px;
+    padding: 10px;
+    position: relative;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-avatar {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-avatar img {
+    width: 65px;
+    height: 65px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 5px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-name {
+    font-size: 1em;
+    padding-bottom: 2px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status {
+    font-size: .8em;
+    margin-bottom: 2px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status .online,
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status .offline {
+    display: inline-block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status .online {
+    background-color: #a0d468;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status .offline {
+    background-color: #d73d32;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .contact-info .contact-status .status {
+    display: inline-block;
+    margin-left: 4px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .last-chat-time {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    font-size: .8em;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .back {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .back:hover {
+    cursor: pointer;
+  }
+  .page-chatbar .chatbar-messages .messages-contact .back i {
+    font-size: 22px;
+    color: #2dc3e8;
+  }
+  .page-chatbar .chatbar-messages .messages-list {
+    list-style: none;
+    padding: 10px 0;
+    overflow: auto;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message {
+    padding: 10px 15px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-info {
+    height: 18px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .bullet,
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .contact-name,
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .message-time {
+    display: inline-block;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .bullet {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #a0d468;
+    margin-right: 5px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .contact-name {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-info .message-time {
+    font-size: .8em;
+    color: #666;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-body {
+    margin-top: 10px;
+    border-radius: 3px;
+    background-color: #a0d468;
+    color: #ffffff;
+    padding: 10px;
+    position: relative;
+    margin-right: 10%;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message .message-body:before {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    content: '';
+    top: -14px;
+    left: 10px;
+    border-top-width: 0;
+    border-bottom-color: #a0d468;
+    border-width: 7px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-info .bullet,
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-info .contact-name,
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-info .message-time {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-info .bullet {
+    background-color: #5db2ff;
+    margin-top: 8px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-info .message-time {
+    margin-top: 2px;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-body {
+    background-color: #5db2ff;
+    margin-left: 10%;
+    margin-right: 0;
+  }
+  .page-chatbar .chatbar-messages .messages-list .message.reply .message-body:before {
+    border-bottom-color: #5db2ff;
+    right: 10px;
+    left: auto;
+  }
+  .page-chatbar .chatbar-messages .send-message {
+    padding: 15px;
+    background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120px;
+    border-top: 1px solid #e5e5e5;
+  }
+  @media screen and (max-width: 530px) {
+    .page-chatbar {
+      background-color: #ffffff;
+      -lh-property: 0;
+  height:-webkit-calc(100vh - 90px);
+  height:-moz-calc(100vh - 90px);
+  height:calc(100vh - 90px);
+  ;
+    }
+    .page-chatbar.open:before {
+      display: none !important;
+    }
+    .page-chatbar.open ~ .page-content {
+      margin-right: 0 !important;
+    }
+    .page-chatbar.open ~ .page-content .breadcrumbs-fixed {
+      right: 0 !important;
+    }
+    .page-chatbar.open ~ .page-content .page-header-fixed {
+      right: 0 !important;
+    }
+  }

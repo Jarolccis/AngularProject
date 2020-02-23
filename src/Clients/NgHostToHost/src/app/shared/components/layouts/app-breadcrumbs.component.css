@@ -1,0 +1,48 @@
+/*#region Breadcrumbs*/
+
+  .breadcrumb {
+    background-color: transparent;
+    display: inline-block;
+    line-height: 24px;
+    margin: 0 22px 0 12px;
+    padding: 0;
+    font-size: 13px;
+    color: #333333;
+    border-radius: 0;
+  }
+  .breadcrumb > li,
+  .breadcrumb > li.active {
+    color: #777777;
+    -webkit-text-shadow: none;
+    text-shadow: none;
+  }
+  .breadcrumb > li + li:before {
+    color: #999999;
+  }
+  .breadcrumb > li > .divider {
+    padding: 0 4px;
+  }
+  .breadcrumb > li > a {
+    display: inline-block;
+    color: #2dc3e8;
+  }
+  .breadcrumb > li:first-child > a {
+    padding-left: 4px;
+  }
+  .breadcrumb > li > i {
+    margin-left: 4px;
+    margin-right: 2px;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+  }
+  .breadcrumb .expand-icon {
+    height: 22px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+    color: #b2b6bf;
+  }
+  /*#endregion Breadcrumb*/

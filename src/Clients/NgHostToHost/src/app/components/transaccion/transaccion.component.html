@@ -1,0 +1,280 @@
+
+<ng-template #transaccionModal>
+    <app-transaccion-modal [transaccion]="transaccion" (hide)="transaccionModalHide()" (hideOk)="transaccionModalHideOk($event)"></app-transaccion-modal>
+</ng-template>
+<app-confirm-modal #aprobarTransaccionModal message="¿Está seguro de aprobar?" showTextInput="true" isRequiredTextInput="true" (ok)="eliminar($event)"></app-confirm-modal>
+<app-confirm-modal #rechazarTransaccionModal message="¿Está seguro de rechazar?" showTextInput="true" isRequiredTextInput="true" (ok)="eliminar($event)"></app-confirm-modal>
+<div class="card border-primary">
+  <!-- <div class="card-header text-white  bg-primary" >
+      transaccion
+  </div> -->
+  <div class="card-body" style="padding-bottom: 0px">
+    
+      <!-- <h5 class="card-title text-primary" style="margin-top:-7px">Resultado</h5> -->
+
+    <div class="table-responsive">
+        <div class="pre-scrollable" style="max-height:380px;overflow-y: auto">
+      <table class="table table-bordered table-hover ">
+        <thead class="">
+        <tr style="background-color:#f5f5f5" class="  bg-primary">
+            <th>
+                <a href="javascript:void(0)" class="text-white">N°</a>
+            </th>
+
+            <th align="center"  style="text-align:center;">             
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('TipoOperacion')">Tipo
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Fecha'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Fecha'}"></i></a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Operacion')">Operación
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Codigo'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Codigo'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('SociedadOrigenId')">E. Pagadora
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Tipo'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Tipo'}"></i>
+              </a>
+            </th>            
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('BancoOrigen')">B. Pagador
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Tiempo'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Tiempo'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Descripcion')">C. de Debito
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Descripcion'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Descripcion'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('NumeroSAP')">E. Beneficiaria
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='UN'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='UN'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Moneda')">B. Beneficiario
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Sociedad'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Sociedad'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Importe')">C. de Abono
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Solicitante'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Solicitante'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('NumeroSAP')">Pago SAP
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='UN'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='UN'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Importe')">Importe
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Solicitante'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Solicitante'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('BancoOrigen')">Fecha
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Tiempo'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Tiempo'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Descripcion')">Usuario
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Descripcion'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Descripcion'}"></i>
+              </a>
+            </th>
+            <th>
+                <a href="javascript:void(0)" class="text-white" (click)="ordenar('Estado')">Estado
+                <i [ngClass]="{'mdi mdi-menu-up-outline mdi-18px':criteriaSort.SortOrder=='ASC' && criteriaSort.SortColumn=='Estado'}"></i>
+                <i [ngClass]="{'mdi mdi-menu-down-outline mdi-18px':criteriaSort.SortOrder=='DESC' && criteriaSort.SortColumn=='Estado'}"></i>
+              </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+
+            <th width="2%" align="center">
+
+            </th>
+            <th width="4%" align="center" style="padding: 0rem;text-align: center">
+                    <a href="javascript:void(0)" (click)="clearFilterTable()" title="Limpiar filtro"><span class="mdi mdi-restart mdi-18px"></span></a>                 
+            </th>
+            <th width="5%">
+                <select class="form-control form-control-sm" [(ngModel)]="criteriaSort.TipoId" (ngModelChange)="criteriaSort.TipoId = getSelectValue($event)" (change)="ordenar('')">
+                    <option value="null">Todos</option>
+                        <option *ngFor="let item of tipos" [value]="item.Key">
+                            {{item.Value}}
+                        </option>
+                </select>
+            </th>
+            <th width="5%">
+                <select class="form-control form-control-sm" [(ngModel)]="criteriaSort.OperacionId" (ngModelChange)="criteriaSort.OperacionId = getSelectValue($event)" (change)="ordenar('')">
+                    <option value="null">Todos</option>
+                        <option *ngFor="let item of operaciones" [value]="item.Key">
+                            {{item.Value}}
+                        </option>
+                </select>
+            </th>
+            <th width="6%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.SociedadOrigen" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="7%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.BancoOrigen" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="7%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.CuentaOrigen" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="7%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.SociedadDestino" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="3%" align="right">
+
+            </th>
+            <th width="7%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.Solicitante" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="7%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.Solicitante" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="6%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.Solicitante" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="6%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.Solicitante" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="6%">
+                <input class="form-control form-control-sm" type="text" [(ngModel)]="criteriaSort.Solicitante" (keyup.enter)="ordenar('')">
+            </th>
+            <th width="7%">
+                <select class="form-control form-control-sm" [(ngModel)]="criteriaSort.EstadoId" (ngModelChange)="criteriaSort.EstadoId = getSelectValue($event)" (change)="ordenar('')">
+                    <option value="null">Todos</option>
+                      <option *ngFor="let item of estados" [value]="item.Key">
+                              {{item.Value}}
+                          </option>
+                </select>
+            </th>
+        </tr>
+        <tr *ngFor="let transaccion of transacciones">
+
+            <td width="2%" align="center">
+                <input type="hidden" data-ng-hide="true" ng-model="transaccion.RowNumber" />
+                <p>{{transacciones.indexOf(transaccion) + 1}}</p>
+            </td>
+
+            <td width="4%" align="center" style="padding: 0rem">
+              <div style="width: 100%;display: inline-flex">
+                <div style="display:inline-block;">
+                        <a href="javascript:void(0)" (click)="abrirModal(transaccion,transaccionModal)" title="ver">
+                            <span class="mdi mdi-eye mdi-18px text-primary"></span>
+                        </a>
+                </div>
+                <div style="display:inline-block;">
+                    <button type="button" class="btn btn-success btn-circle-active" *ngIf="transaccion.EstadoId==_profileService.parameter.estadoTransaccionAprobadoId"></button>
+                    <button type="button" class="btn btn-warning btn-circle-active" *ngIf="transaccion.EstadoId==_profileService.parameter.estadoTransaccionEnviadoId"></button>
+                    <button type="button" class="btn btn-danger btn-circle-active" *ngIf="transaccion.EstadoId==_profileService.parameter.estadoTransaccionRechazadoId"></button>
+                </div>
+              </div>
+            </td>
+            <td width="5%">
+                <div tooltip="{{transaccion.TipoOperacion}}" class="column-responsive">
+                    <p>{{transaccion.TipoOperacion}}</p>
+                </div>
+            </td>
+            <td width="5%">
+                <div tooltip="{{transaccion.Operacion}}" class="column-responsive">
+                    <p> {{transaccion.Operacion}}</p>
+                </div>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.CuentaOrigen.Sociedad}}" class="column-responsive">
+                    <p> {{transaccion.CuentaOrigen.Sociedad}}</p>
+                </div>
+            </td>           
+            <td width="7%">
+                <p>  {{ transaccion.CuentaOrigen.Banco }}</p>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.CuentaOrigen.Numero}}" class="column-responsive">
+                    <p> {{transaccion.CuentaOrigen.Numero}}</p>
+                </div>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.CuentaDestino.Sociedad}}" class="column-responsive">
+                    <p> {{transaccion.CuentaDestino.Sociedad}}</p>
+                </div>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.CuentaDestino.Banco}}" class="column-responsive">
+                    <p> {{transaccion.CuentaDestino.Banco}}</p>
+                </div>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.CuentaDestino.Numero}}" class="column-responsive">
+                    <p> {{transaccion.CuentaDestino.Numero}}</p>
+                </div>
+            </td>
+            <td width="6%">
+                <div tooltip="{{transaccion.NumeroSAP}}" class="column-responsive">
+                    <p>{{transaccion.NumeroSAP}}</p>
+                </div>
+            </td>
+            <td width="6%" align="right">
+                <div tooltip="{{transaccion.MonedaCodigo}}{{transaccion.Importe | number : '1.2-2'}}" class="column-responsive">
+                    <p>{{transaccion.MonedaCodigo}}{{transaccion.Importe | number : '1.2-2'}}</p>
+                </div>
+            </td>
+            <td width="6%">
+                <div tooltip="{{transaccion.Fecha | date: 'dd/MM/yyyy'}}" class="column-responsive">
+                    <p> {{transaccion.FechaIngreso | date: 'dd/MM/yyyy'}}</p>
+                </div>
+            </td>
+            <td width="6%">
+                <div tooltip="{{transaccion.Usuario}}" class="column-responsive">
+                    <p> {{transaccion.Usuario}}</p>
+                </div>
+            </td>
+            <td width="7%">
+                <div tooltip="{{transaccion.Estado}}" class="column-responsive">
+                    <p> {{transaccion.Estado}}</p>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+  </table>   
+</div> 
+  </div>
+  <div class="row">
+      <div class="col-12 col-sm-2 col-md-1 col-lg-1 col-xl-1">
+          <select id="IdPageSize" class="form-control form-control-sm" (change)="ordenar(criteriaSort.PageNumber)" [(ngModel)]="criteriaSort.PageSize">
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+          </select>
+      </div>
+      <div class="col-lg-5 col-md-5 col-sm-4"> <label style="margin-top:3px">{{totalItems}} firmaes encontradas.</label> </div>
+      <div class="col-12 col-lg-6 col-md-6">
+          <div class="float-right">    
+              <pagination [totalItems]="totalItems" [(ngModel)]="criteriaSort.SortColumn" [maxSize]="maxSize" class="pagination-sm"
+              [boundaryLinks]="true" [directionLinks]="false" [rotate]="false" (numPages)="numPages = $event" firstText="&laquo;" (pageChanged)="sortByPage($event.page)" lastText="&raquo;"></pagination>
+        
+          </div>
+      </div>
+      
+  </div>
+</div>
+
+
+</div>

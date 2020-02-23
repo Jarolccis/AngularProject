@@ -1,0 +1,12 @@
+<ul class="breadcrumb ng-isolate-scope">
+    <li>
+        <i class="fa fa-home"></i>
+        <a href="#">{{parentText}}</a></li>
+        <li ng-class="{active: $last}" ng-switch="$last || !!step.abstract" class="active">
+            <!-- ngSwitchWhen: false -->
+            <!-- ngSwitchWhen: true -->
+            <span class="ng-binding">Transacción</span>
+            <!-- end ngSwitchWhen: -->
+        </li>
+        <!-- end ngRepeat: step in steps -->
+    </ul>
